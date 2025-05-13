@@ -3,6 +3,28 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px; /* Adjust to your navbar height */
 }
+/* Hides menu on small screens */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+  }
+
+  .navbar.show {
+    display: flex !important;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+}
+
 
 *{
   margin:0;

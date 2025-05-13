@@ -1,5 +1,7 @@
-$(document).ready(function() {
-
+function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("show");
+  }
+  $(document).ready(function() {
   //sticky header
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1) {
